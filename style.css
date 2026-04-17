@@ -1,32 +1,32 @@
 /* ============================================================
    NIMA ALIZADEH — Portfolio Stylesheet
-   Apple-inspired: true black · neutral grays · teal accent
+   Apple-inspired: pure white · light grays · teal accent
    ============================================================ */
 
 /* ---------- CSS VARIABLES ---------- */
 :root {
-  --bg-primary:    #000000;
-  --bg-secondary:  #0d0d0d;
-  --bg-card:       #1c1c1e;
-  --bg-card-hover: #2c2c2e;
-  --border:        #3a3a3c;
-  --border-light:  #48484a;
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f5f5f7;
+  --bg-card:       #ffffff;
+  --bg-card-hover: #f5f5f7;
+  --border:        #d2d2d7;
+  --border-light:  #e0e0e5;
 
-  --teal:          #00bfa5;
-  --teal-dim:      #00a08a;
-  --teal-glow:     rgba(0, 191, 165, 0.12);
-  --gold:          #f0c040;
-  --gold-dim:      rgba(240, 192, 64, 0.12);
+  --teal:          #0071e3;
+  --teal-dim:      #0077ed;
+  --teal-glow:     rgba(0, 113, 227, 0.10);
+  --gold:          #bf5af2;
+  --gold-dim:      rgba(191, 90, 242, 0.10);
 
-  --text-primary:  #f5f5f7;
-  --text-secondary:#aeaeb2;
-  --text-muted:    #636366;
+  --text-primary:  #1d1d1f;
+  --text-secondary:#6e6e73;
+  --text-muted:    #a1a1a6;
 
   --nav-height: 70px;
   --radius: 12px;
   --radius-sm: 8px;
-  --shadow: 0 4px 24px rgba(0,0,0,0.7);
-  --shadow-lg: 0 8px 48px rgba(0,0,0,0.9);
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 48px rgba(0,0,0,0.12);
 
   --transition: 0.3s ease;
 }
@@ -1710,8 +1710,8 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 /* --- SUBTLE SECTION DIVIDERS --- */
 .section-alt {
-  border-top:    1px solid rgba(255, 255, 255, 0.04);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border-top:    1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 /* --- MOBILE ADJUSTMENTS --- */
@@ -1728,9 +1728,8 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 /* ============================================================
-   APPLE DEEP OVERHAUL v2
-   Full surface-level redesign to match Apple's design language:
-   pure black · no borders · shadows · pill buttons · huge type
+   APPLE DEEP OVERHAUL v2 — LIGHT MODE
+   White background · true Apple design language
    ============================================================ */
 
 /* --- NAV: slim, minimal, Apple-precise --- */
@@ -1740,17 +1739,17 @@ strong { color: var(--text-primary); font-weight: 600; }
   border-bottom: none;
 }
 #navbar.scrolled {
-  background: rgba(0, 0, 0, 0.82);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
-  box-shadow: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
   border-bottom: none;
 }
 .nav-link {
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.01em;
-  color: rgba(245, 245, 247, 0.72);
+  color: rgba(29, 29, 31, 0.72);
   padding: 5px 10px;
   border-radius: 6px;
   background: none;
@@ -1762,15 +1761,15 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 .nav-link.contact-btn {
   background: var(--teal);
-  color: #000;
+  color: #fff;
   border: none;
   border-radius: 100px;
   padding: 5px 14px;
   font-weight: 500;
 }
 .nav-link.contact-btn:hover {
-  background: #00d4b8;
-  color: #000;
+  background: #0077ed;
+  color: #fff;
   border: none;
 }
 .nav-logo {
@@ -1788,7 +1787,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   animation: none !important;
   width: 148px;
   height: 148px;
-  border: 2px solid rgba(0, 191, 165, 0.25);
+  border: 2px solid rgba(0, 113, 227, 0.2);
   border-radius: 50%;
   background: none;
 }
@@ -1801,7 +1800,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 .photo-accent { display: none !important; }
 
-/* --- HERO: bigger name, brighter gradient --- */
+/* --- HERO: bigger name, Apple-blue gradient --- */
 .hero-name {
   font-size: clamp(4.5rem, 12vw, 10.5rem);
   letter-spacing: -0.05em;
@@ -1809,7 +1808,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   margin-bottom: 24px;
 }
 .hero-name span {
-  background: linear-gradient(120deg, #00ffea 0%, #00bfa5 30%, #60c8ff 65%, #f0c040 100%);
+  background: linear-gradient(120deg, #0071e3 0%, #34aadc 40%, #bf5af2 75%, #ff9f0a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1863,7 +1862,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 .text-center .section-header p { margin: 16px auto 0; }
 
-/* --- CARDS: no borders, depth via shadow --- */
+/* --- CARDS: light surface, subtle shadow --- */
 .skill-card,
 .project-card,
 .leadership-card,
@@ -1873,8 +1872,8 @@ strong { color: var(--text-primary); font-weight: 600; }
 .highlight-card,
 .certifications {
   border: none !important;
-  background: #141414;
-  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.6), 0 0 0 0.5px rgba(255,255,255,0.06) inset;
+  background: #ffffff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07), 0 0 0 1px rgba(0,0,0,0.05);
   transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
               box-shadow 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
 }
@@ -1882,13 +1881,13 @@ strong { color: var(--text-primary); font-weight: 600; }
 .project-card:hover,
 .leadership-card:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 16px 56px rgba(0, 0, 0, 0.8), 0 0 0 0.5px rgba(0,191,165,0.15) inset;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(0,0,0,0.05);
 }
 .timeline-card:hover { transform: none; }
 
-/* --- STATS BAR: borderless, pure black --- */
+/* --- STATS BAR: light gray band --- */
 .stats-bar {
-  background: #000;
+  background: var(--bg-secondary);
   border-top: none;
   border-bottom: none;
 }
@@ -1915,24 +1914,24 @@ strong { color: var(--text-primary); font-weight: 600; }
 .btn-primary {
   background: var(--teal);
   border-color: var(--teal);
-  color: #000;
+  color: #fff;
   font-weight: 600;
 }
 .btn-primary:hover {
-  background: #00d4b8;
-  border-color: #00d4b8;
-  color: #000;
-  box-shadow: 0 8px 32px rgba(0,191,165,0.4);
+  background: #0077ed;
+  border-color: #0077ed;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0,113,227,0.3);
   transform: translateY(-2px) scale(1.02);
 }
 .btn-outline {
-  border-color: rgba(255,255,255,0.18);
+  border-color: rgba(0,0,0,0.18);
   color: var(--text-primary);
-  background: rgba(255,255,255,0.04);
+  background: rgba(0,0,0,0.03);
 }
 .btn-outline:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.35);
+  background: rgba(0,0,0,0.07);
+  border-color: rgba(0,0,0,0.35);
   color: var(--text-primary);
   transform: translateY(-2px) scale(1.02);
 }
@@ -1940,53 +1939,55 @@ strong { color: var(--text-primary); font-weight: 600; }
 /* --- SOCIAL ICONS: borderless circle --- */
 .social-icon {
   border: none;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text-secondary);
   width: 38px;
   height: 38px;
   transition: background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
 }
 .social-icon:hover {
   background: var(--teal);
+  color: #fff;
   border: none;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,191,165,0.35);
+  box-shadow: 0 6px 20px rgba(0,113,227,0.3);
 }
 
-/* --- CONTACT FORM: clean inset inputs --- */
+/* --- CONTACT FORM: clean inputs --- */
 .contact-form input,
 .contact-form textarea {
-  border: none;
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.08) inset;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  box-shadow: none;
   color: var(--text-primary);
   border-radius: 14px;
-  transition: box-shadow 0.22s ease, background 0.22s ease;
+  transition: box-shadow 0.22s ease, border-color 0.22s ease;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  background: rgba(255, 255, 255, 0.09);
-  box-shadow: 0 0 0 2px var(--teal) inset;
+  background: #fff;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(0,113,227,0.15);
 }
 
-/* --- HERO BACKGROUND: richer gradient --- */
+/* --- HERO BACKGROUND: clean white with subtle gradient --- */
 .hero {
   background:
-    radial-gradient(ellipse at 20% 55%, rgba(0,191,165,0.14) 0%, transparent 55%),
-    radial-gradient(ellipse at 82% 18%, rgba(0,100,220,0.10) 0%, transparent 52%),
-    radial-gradient(ellipse at 55% 90%, rgba(240,192,64,0.06) 0%, transparent 40%),
-    #000;
+    radial-gradient(ellipse at 20% 60%, rgba(0,113,227,0.06) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 20%, rgba(191,90,242,0.05) 0%, transparent 50%),
+    #ffffff;
 }
 
 /* --- HERO SECTION BG DOTS: hide --- */
 .hero::before { display: none !important; }
 
 /* --- TIMELINE LINE COLOR --- */
-.timeline-line { background: linear-gradient(to bottom, var(--teal), transparent); opacity: 0.3; }
+.timeline-line { background: linear-gradient(to bottom, var(--teal), transparent); opacity: 0.4; }
 
 /* --- SCROLL PROGRESS BAR COLOR --- */
 #scroll-progress {
-  background: linear-gradient(90deg, #00bfa5, #7dd4fc, #f0c040);
+  background: linear-gradient(90deg, #0071e3, #34aadc, #bf5af2);
   height: 2.5px;
 }
 

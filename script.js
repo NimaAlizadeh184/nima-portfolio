@@ -203,3 +203,51 @@ document.querySelectorAll('.thesis-toggle').forEach(btn => {
     btn.textContent = abstract.classList.contains('open') ? '▲ Hide Abstract' : '▼ Read Abstract';
   });
 });
+
+/* ---------- SCROLL PROGRESS BAR ---------- */
+(function () {
+  const bar = document.getElementById('scroll-progress');
+  if (!bar) return;
+  function updateBar() {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', updateBar, { passive: true });
+})();
+
+/* ---------- TYPEWRITER ANIMATION ---------- */
+(function () {
+  const el = document.getElementById('heroTyping');
+  if (!el) return;
+
+  const phrases = [
+    'Interpenetrating Polymer Networks',
+    'DLP 3D Printing & Additive Manufacturing',
+    'Block Copolymers & Semiconductor Patterning',
+    'High-Temperature Aerospace Materials',
+    'AI-Assisted Materials Science'
+  ];
+
+  let pIdx = 0, cIdx = 0, deleting = false;
+
+  function tick() {
+    const phrase = phrases[pIdx];
+    if (!deleting) {
+      el.textContent = phrase.slice(0, ++cIdx);
+      if (cIdx === phrase.length) {
+        deleting = true;
+        return setTimeout(tick, 2200);
+      }
+    } else {
+      el.textContent = phrase.slice(0, --cIdx);
+      if (cIdx === 0) {
+        deleting = false;
+        pIdx = (pIdx + 1) % phrases.length;
+        return setTimeout(tick, 400);
+      }
+    }
+    setTimeout(tick, deleting ? 35 : 65);
+  }
+
+  setTimeout(tick, 1000);
+})();

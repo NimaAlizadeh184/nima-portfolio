@@ -1491,3 +1491,84 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .project-card:hover .project-img img { transform: scale(1.05); }
+
+/* ---------- SCROLL PROGRESS BAR ---------- */
+#scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--teal), var(--gold), var(--teal));
+  background-size: 200% 100%;
+  z-index: 2000;
+  pointer-events: none;
+  animation: progress-shimmer 3s linear infinite;
+}
+@keyframes progress-shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* ---------- HERO STATUS BADGE ---------- */
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(0, 191, 165, 0.08);
+  border: 1px solid rgba(0, 191, 165, 0.25);
+  border-radius: 20px;
+  margin-bottom: 16px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+.status-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
+  animation: pulse-dot 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2); }
+  50%       { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0.05); }
+}
+
+/* ---------- HERO TYPEWRITER ---------- */
+.hero-rotating {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+  min-height: 1.4em;
+}
+.hero-typing-text { color: var(--teal); font-weight: 600; }
+.typing-cursor {
+  color: var(--teal);
+  animation: blink-cursor 1s step-end infinite;
+}
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ---------- GOLD TAG & STAT VARIANTS ---------- */
+.tag-gold {
+  color: var(--gold);
+  border-color: rgba(240, 192, 64, 0.35);
+  background: rgba(240, 192, 64, 0.1);
+}
+.stat-num-gold { color: var(--gold); }
+
+/* ---------- FIX PROJECTS GRID TOP MARGIN ---------- */
+.projects-grid { margin-top: 0; }
+
+/* ---------- REDUCED MOTION ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-ring, .hero-photo { animation: none; }
+  .scroll-line                  { animation: none; opacity: 0.6; }
+  .status-dot                   { animation: none; }
+  .typing-cursor                { animation: none; }
+  #scroll-progress              { animation: none; }
+  .fade-in                      { transition: none; }
+}

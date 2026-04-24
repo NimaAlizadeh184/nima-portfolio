@@ -1999,3 +1999,86 @@ strong { color: var(--text-primary); font-weight: 600; }
   .hero-photo { width: 110px; height: 110px; }
   .btn { padding: 10px 22px; font-size: 0.85rem; }
 }
+
+/* ============================================================
+   CUSTOM ADDITIONS
+   ============================================================ */
+
+/* --- FIX HERO SCROLL / SOCIAL OVERLAP --- */
+.hero-container {
+  padding-bottom: 120px;
+}
+.hero-scroll {
+  bottom: 40px;
+  z-index: 2;
+}
+
+/* --- SECTION TAG: LARGER / MORE READABLE --- */
+.section-tag {
+  font-size: 0.82rem !important;
+  letter-spacing: 0.2em !important;
+}
+
+/* --- EDUCATION CARD IMAGES --- */
+.timeline-card-img {
+  width: calc(100% + 48px);
+  margin: -24px -24px 20px -24px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  overflow: hidden;
+  height: 200px;
+}
+.timeline-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* --- SKILL CARD IMAGES --- */
+.skill-card-img {
+  width: calc(100% + 48px);
+  margin: -28px -24px 20px -24px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  overflow: hidden;
+  height: 160px;
+}
+.skill-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.skill-card:hover .skill-card-img img {
+  transform: scale(1.04);
+}
+
+/* --- AI SKILL CARD HIGHLIGHT --- */
+.skill-card-ai {
+  border-color: rgba(0, 166, 147, 0.35);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(0,166,147,0.04) 100%);
+}
+.skill-card-ai .skill-card-icon {
+  background: rgba(0,166,147,0.12);
+}
+.skill-card-note {
+  font-size: 0.78rem;
+  color: var(--teal);
+  margin: -10px 0 14px;
+  font-style: italic;
+}
+
+/* --- PUBLICATION LINKS --- */
+.pub-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.pub-link:hover {
+  color: var(--teal);
+}
+.pub-link:hover em {
+  color: var(--teal);
+}

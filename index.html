@@ -66,23 +66,22 @@
         <li class="nav-dropdown">
           <a href="#education" class="nav-link">Education</a>
           <ul class="dropdown-menu">
-            <li><a href="#education">Doctor of Philosophy</a></li>
-            <li><a href="#education">Master of Science</a></li>
+            <li><a href="#phd">Doctor of Philosophy</a></li>
+            <li><a href="#ms">Master of Science</a></li>
             <li><a href="#skills">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
           </ul>
         </li>
-        <li class="nav-dropdown">
-          <a href="#experience" class="nav-link">Experience</a>
-          <ul class="dropdown-menu">
-            <li><a href="#experience">Graduate Research Assistant (Ph.D.)</a></li>
-            <li><a href="#experience">Graduate Research Assistant (M.S.)</a></li>
-          </ul>
-        </li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#publications" class="nav-link">Publications</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#leadership" class="nav-link">Leadership</a></li>
+        <li class="nav-dropdown">
+          <a href="#leadership" class="nav-link">Leadership</a>
+          <ul class="dropdown-menu">
+            <li><a href="#leadership">Service &amp; Leadership</a></li>
+            <li><a href="#awards">Honors &amp; Awards</a></li>
+          </ul>
+        </li>
         <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
       </ul>
     </div>
@@ -111,8 +110,8 @@
         <p class="hero-tagline">
           <span class="tag">Ph.D. Auburn</span>
           <span class="tag">UCSB Postdoc</span>
-          <span class="tag">Saint-Gobain</span>
-          <span class="tag">12+ Publications</span>
+          <span class="tag">Periodic Labs</span>
+          <span class="tag">10+ Publications</span>
           <span class="tag tag-gold">169 Citations</span>
         </p>
         <p class="hero-desc">Developing next-generation polymer materials for aerospace, biomedical, and semiconductor applications — from interpenetrating networks to 3D-printed functional systems.</p>
@@ -149,7 +148,7 @@
   <div class="stats-bar">
     <div class="container stats-container">
       <div class="stat-item">
-        <span class="stat-num" data-target="12">0</span><span class="stat-plus">+</span>
+        <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
         <span class="stat-label">Journal Publications</span>
       </div>
       <div class="stat-item stat-item-gold">
@@ -184,14 +183,11 @@
             <img src="images/headshot.jpg" alt="Nima Alizadeh" loading="lazy">
             <div class="photo-accent"></div>
           </div>
-          <div class="about-diagram">
-            <img src="images/ipn-diagram.png" alt="Graft-Interpenetrating Polymer Network diagram" loading="lazy">
-            <p class="diagram-caption">Graft-IPN — core research focus</p>
-          </div>
         </div>
         <div class="about-text fade-in">
-          <p class="bio-lead">I am a materials scientist with a strong background in <strong>polymer engineering</strong>, materials development, and advanced manufacturing.</p>
-          <p>Most recently, I worked as a Senior Research Engineer at Saint-Gobain ENC, developing sustainable high-temperature materials for aviation, aerospace, and automotive industries. Previously, as a postdoctoral scholar at <strong>UC Santa Barbara</strong>, I developed DLP 3D printing resins and designed block copolymer materials for semiconductor thin-film patterning with Tokyo Electron (TEL).</p>
+          <p class="bio-lead">I am a materials scientist with a strong background in <strong>polymer engineering</strong>, materials development, advanced manufacturing, and <strong>AI-driven materials discovery</strong>.</p>
+          <p>Currently, I work as a Materials Lab Specialist at <strong>Periodic Labs</strong> in Menlo Park, CA, operating advanced characterization instruments (SEM, XRD, MPMS) to generate high-quality experimental data that trains next-generation materials AI models — bridging the physical lab and machine learning at one of the most ambitious AI-driven materials discovery platforms in the industry.</p>
+          <p>Previously, I worked as a Senior Research Engineer at <strong>Saint-Gobain ENC</strong>, developing sustainable high-temperature materials for aviation, aerospace, and automotive industries. As a postdoctoral scholar at <strong>UC Santa Barbara</strong>, I developed DLP 3D printing resins and designed block copolymer materials for semiconductor thin-film patterning with Tokyo Electron (TEL).</p>
           <p>My <strong>Ph.D. and M.S.</strong> at Auburn University focused on interpenetrating polymer networks (IPNs) — a special polymer blend achieving 150% improvement in fracture toughness for transparent, high-impact structural materials, composites, and thermal energy storage.</p>
           <div class="about-highlights">
             <div class="highlight-card">
@@ -241,9 +237,12 @@
       </div>
       <div class="timeline">
 
-        <div class="timeline-item fade-in">
+        <div class="timeline-item fade-in" id="phd">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
+            <div class="timeline-card-img">
+              <img src="images/ipn-diagram.png" alt="Graft-Interpenetrating Polymer Network — PhD Research" loading="lazy">
+            </div>
             <div class="timeline-meta">
               <span class="timeline-date">Jan. 2017 – May 2021</span>
               <span class="timeline-badge">Ph.D.</span>
@@ -260,9 +259,12 @@
           </div>
         </div>
 
-        <div class="timeline-item fade-in">
+        <div class="timeline-item fade-in" id="ms">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
+            <div class="timeline-card-img">
+              <img src="images/research-3d-printing.png" alt="3D Printing Research — M.S. Research" loading="lazy">
+            </div>
             <div class="timeline-meta">
               <span class="timeline-date">Jan. 2017 – Dec. 2018</span>
               <span class="timeline-badge">M.S.</span>
@@ -309,15 +311,31 @@
           <div class="timeline-dot accent-gold"></div>
           <div class="timeline-card">
             <div class="timeline-meta">
-              <span class="timeline-date">Aug. 2024 – Present</span>
+              <span class="timeline-date">Mar. 2026 – Present</span>
               <span class="timeline-badge badge-gold">Current</span>
+            </div>
+            <h3>Periodic Labs</h3>
+            <p class="timeline-role">Materials Lab Specialist — Contract | Menlo Park, CA</p>
+            <ul class="timeline-bullets">
+              <li>Operate advanced characterization instruments including SEM, XRD, and MPMS among others, alongside LABMAN and additional synthesis and dispensing systems, to execute up to 50 powder-based experiments per day and generate high-quality data for training next-generation materials AI models.</li>
+              <li>Perform instrument calibration, develop SOPs, and execute QC and metrology protocols to ensure the integrity of experimental data feeding into an LLM designed to predict and synthesize novel materials.</li>
+              <li>Collaborate with a multidisciplinary team of scientists and engineers bridging computational simulation and real-world experimentation, contributing to one of the most ambitious AI-driven materials discovery platforms in the industry.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug. 2024 – Feb. 2026</span>
             </div>
             <h3>Independent Consulting &amp; Professional Development</h3>
             <p class="timeline-role">Materials Scientist — AI-Driven Solutions &amp; Technical Consulting</p>
             <ul class="timeline-bullets">
-              <li>Deliver freelance consulting in advanced polymers, manufacturing, and materials development for early-stage projects and R&amp;D teams.</li>
-              <li>Support AI model development in materials science through data annotation and technical validation at the intersection of materials and machine learning.</li>
-              <li>Pursuing certifications in Battery Technologies, PCB Fabrication, Python, Machine Learning Specialization (Stanford/DeepLearning.AI), Additive Manufacturing, and Deep Learning.</li>
+              <li>Delivered freelance consulting in advanced polymers, manufacturing, and materials development for early-stage projects and R&amp;D teams.</li>
+              <li>Supported AI model development in materials science through data annotation and technical validation at the intersection of materials and machine learning.</li>
+              <li>Pursued certifications in Battery Technologies, PCB Fabrication, Python, Machine Learning Specialization (Stanford/DeepLearning.AI), Additive Manufacturing, and Deep Learning.</li>
             </ul>
           </div>
         </div>
@@ -421,6 +439,9 @@
       <div class="skills-grid">
 
         <div class="skill-card fade-in">
+          <div class="skill-card-img">
+            <img src="images/iStock-1318655862.jpg" alt="Materials Characterization" loading="lazy">
+          </div>
           <div class="skill-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
           </div>
@@ -434,6 +455,9 @@
         </div>
 
         <div class="skill-card fade-in">
+          <div class="skill-card-img">
+            <img src="images/research-3d-printing.png" alt="Polymer Processing and Additive Manufacturing" loading="lazy">
+          </div>
           <div class="skill-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
@@ -446,6 +470,9 @@
         </div>
 
         <div class="skill-card fade-in">
+          <div class="skill-card-img">
+            <img src="images/stats-plot.png" alt="Technical Software and Data Analysis" loading="lazy">
+          </div>
           <div class="skill-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
@@ -463,6 +490,19 @@
           <h3>Programming</h3>
           <div class="skill-tags">
             <span>Python</span><span>MATLAB</span><span>C++</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in skill-card-ai">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/></svg>
+          </div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p class="skill-card-note">Applied in materials science &amp; discovery</p>
+          <div class="skill-tags">
+            <span>Machine Learning</span><span>Deep Learning</span><span>Data Annotation</span>
+            <span>LLM Training Data</span><span>Materials AI</span><span>Python (ML)</span>
+            <span>Neural Networks</span><span>Supervised Learning</span>
           </div>
         </div>
 
@@ -544,7 +584,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">1</span>
             <div class="pub-body">
-              <p class="pub-citation"><strong>N. Alizadeh</strong>, E. Broughton, M. Auad, "Graft semi-interpenetrating polymer network phase change materials for thermal energy storage," <em>ACS Applied Polymer Materials</em> 2021, 3 (4), 1785–1794.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1021/acsapm.0c01363" target="_blank" rel="noopener noreferrer" class="pub-link"><strong>N. Alizadeh</strong>, E. Broughton, M. Auad, "Graft semi-interpenetrating polymer network phase change materials for thermal energy storage," <em>ACS Applied Polymer Materials</em> 2021, 3 (4), 1785–1794.</a></p>
               <div class="pub-tags"><span>IPN</span><span>Thermal Energy Storage</span><span>ACS</span></div>
             </div>
           </div>
@@ -552,7 +592,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">2</span>
             <div class="pub-body">
-              <p class="pub-citation"><strong>N. Alizadeh</strong>, E. Triggs, R. Farag, M. Auad, "Flexible acrylic-polyurethane based graft-interpenetrating polymer networks for high impact structural applications," <em>European Polymer Journal</em> 2021, 148, 110338.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1016/j.eurpolymj.2021.110338" target="_blank" rel="noopener noreferrer" class="pub-link"><strong>N. Alizadeh</strong>, E. Triggs, R. Farag, M. Auad, "Flexible acrylic-polyurethane based graft-interpenetrating polymer networks for high impact structural applications," <em>European Polymer Journal</em> 2021, 148, 110338.</a></p>
               <div class="pub-tags"><span>IPN</span><span>Structural</span><span>Fracture Toughness</span></div>
             </div>
           </div>
@@ -560,7 +600,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">3</span>
             <div class="pub-body">
-              <p class="pub-citation"><strong>N. Alizadeh</strong>, A. Celestine, M. Auad, V. Agrawal, "Mechanical characterization and modeling stress relaxation behavior of acrylic–polyurethane-based graft-interpenetrating polymer networks," <em>Polymer Engineering &amp; Science</em> 2021, 61 (5), 1299–1309.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1002/pen.25640" target="_blank" rel="noopener noreferrer" class="pub-link"><strong>N. Alizadeh</strong>, A. Celestine, M. Auad, V. Agrawal, "Mechanical characterization and modeling stress relaxation behavior of acrylic–polyurethane-based graft-interpenetrating polymer networks," <em>Polymer Engineering &amp; Science</em> 2021, 61 (5), 1299–1309.</a></p>
               <div class="pub-tags"><span>IPN</span><span>Stress Relaxation</span><span>Mechanical Modeling</span></div>
             </div>
           </div>
@@ -568,7 +608,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">4</span>
             <div class="pub-body">
-              <p class="pub-citation"><strong>N. Alizadeh</strong>, D. Thorne, M. Auad, A. Celestine, "Mechanical performance of vinyl ester-polyurethane interpenetrating polymer network composites," <em>Journal of Applied Polymer Science</em> 2021, 138 (19), 50411.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1002/app.50411" target="_blank" rel="noopener noreferrer" class="pub-link"><strong>N. Alizadeh</strong>, D. Thorne, M. Auad, A. Celestine, "Mechanical performance of vinyl ester-polyurethane interpenetrating polymer network composites," <em>Journal of Applied Polymer Science</em> 2021, 138 (19), 50411.</a></p>
               <div class="pub-tags"><span>IPN</span><span>Composites</span><span>Vinyl Ester</span></div>
             </div>
           </div>
@@ -576,7 +616,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">5</span>
             <div class="pub-body">
-              <p class="pub-citation"><strong>N. Alizadeh</strong>, M. Barde, M. Minkler, A. Celestine, V. Agrawal, B. Beckingham, M. Auad, "High-fracture-toughness acrylic-polyurethane-based graft-interpenetrating polymer networks for transparent applications," <em>Polymer International</em> 2020, 70 (5), 636–647.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1002/pi.6149" target="_blank" rel="noopener noreferrer" class="pub-link"><strong>N. Alizadeh</strong>, M. Barde, M. Minkler, A. Celestine, V. Agrawal, B. Beckingham, M. Auad, "High-fracture-toughness acrylic-polyurethane-based graft-interpenetrating polymer networks for transparent applications," <em>Polymer International</em> 2020, 70 (5), 636–647.</a></p>
               <div class="pub-tags"><span>IPN</span><span>Transparent Materials</span><span>Fracture Toughness</span></div>
             </div>
           </div>
@@ -584,7 +624,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">6</span>
             <div class="pub-body">
-              <p class="pub-citation"><strong>N. Alizadeh</strong>, S. Bird, R. Mendez, K. Jajam, A. Alexander, H. Tippur, M. Auad, "Chapter 11 — Synthesis and characterization of high performance interpenetrating polymer networks with polyurethane and poly(methyl methacrylate)," in <em>Unsaturated Polyester Resins</em>, Elsevier: 2019, pp. 243–255.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1016/B978-0-12-816129-6.00011-9" target="_blank" rel="noopener noreferrer" class="pub-link"><strong>N. Alizadeh</strong>, S. Bird, R. Mendez, K. Jajam, A. Alexander, H. Tippur, M. Auad, "Chapter 11 — Synthesis and characterization of high performance interpenetrating polymer networks with polyurethane and poly(methyl methacrylate)," in <em>Unsaturated Polyester Resins</em>, Elsevier: 2019, pp. 243–255.</a></p>
               <div class="pub-tags"><span>Book Chapter</span><span>IPN</span><span>Elsevier</span></div>
             </div>
           </div>
@@ -592,7 +632,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">7</span>
             <div class="pub-body">
-              <p class="pub-citation">Y. Wang, <strong>N. Alizadeh</strong>, M. Barde, M. Auad, B. Beckingham, "Poly(acrylic acid)-based hydrogel actuators fabricated via digital light projection additive manufacturing," <em>ACS Applied Polymer Materials</em> 2022, 4 (2), 971–979.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1021/acsapm.1c01423" target="_blank" rel="noopener noreferrer" class="pub-link">Y. Wang, <strong>N. Alizadeh</strong>, M. Barde, M. Auad, B. Beckingham, "Poly(acrylic acid)-based hydrogel actuators fabricated via digital light projection additive manufacturing," <em>ACS Applied Polymer Materials</em> 2022, 4 (2), 971–979.</a></p>
               <div class="pub-tags"><span>DLP</span><span>Hydrogel Actuators</span><span>ACS</span></div>
             </div>
           </div>
@@ -600,7 +640,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">8</span>
             <div class="pub-body">
-              <p class="pub-citation">Y. Choi, S. Warnock, <strong>N. Alizadeh</strong>, P. Nguyen, D. Kottage, O. Phillips, Z. Chen, M. Chabinyc, C. Bates, "Acid-sensitive molecular glasses as removable thin-film protective layers," <em>Chemistry of Materials</em> 2023, 35 (23), 10078–10085.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1021/acs.chemmater.3c02102" target="_blank" rel="noopener noreferrer" class="pub-link">Y. Choi, S. Warnock, <strong>N. Alizadeh</strong>, P. Nguyen, D. Kottage, O. Phillips, Z. Chen, M. Chabinyc, C. Bates, "Acid-sensitive molecular glasses as removable thin-film protective layers," <em>Chemistry of Materials</em> 2023, 35 (23), 10078–10085.</a></p>
               <div class="pub-tags"><span>Thin Films</span><span>Semiconductor</span><span>Block Copolymer</span></div>
             </div>
           </div>
@@ -608,7 +648,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">9</span>
             <div class="pub-body">
-              <p class="pub-citation">J. Hinkle, A. Bansode, <strong>N. Alizadeh</strong>, A. Poudyal, J. Thornhill, A. Bass, X. Zhang, A. Adamczyk, T. Elder, M. Auad, "Nickel hydroxide growth on renewable activated carbon microfibers for the development of supercapacitors," <em>Journal of Applied Polymer Science</em> 2023, 140 (28), e54052.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1002/app.54052" target="_blank" rel="noopener noreferrer" class="pub-link">J. Hinkle, A. Bansode, <strong>N. Alizadeh</strong>, A. Poudyal, J. Thornhill, A. Bass, X. Zhang, A. Adamczyk, T. Elder, M. Auad, "Nickel hydroxide growth on renewable activated carbon microfibers for the development of supercapacitors," <em>Journal of Applied Polymer Science</em> 2023, 140 (28), e54052.</a></p>
               <div class="pub-tags"><span>Supercapacitors</span><span>Energy Storage</span></div>
             </div>
           </div>
@@ -616,7 +656,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">10</span>
             <div class="pub-body">
-              <p class="pub-citation">M. Minkler, X. Hou, <strong>N. Alizadeh</strong>, M. Auad, A. Schindler, L. Beckingham, B. Beckingham, "Curing kinetics of tetrathiol-crosslinked diglycidyl ether of bisphenol A and poly(ethylene oxide)diglycidylether," <em>Materials Letters</em> 2022, 310, 131491.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1016/j.matlet.2021.131491" target="_blank" rel="noopener noreferrer" class="pub-link">M. Minkler, X. Hou, <strong>N. Alizadeh</strong>, M. Auad, A. Schindler, L. Beckingham, B. Beckingham, "Curing kinetics of tetrathiol-crosslinked diglycidyl ether of bisphenol A and poly(ethylene oxide)diglycidylether," <em>Materials Letters</em> 2022, 310, 131491.</a></p>
               <div class="pub-tags"><span>Curing Kinetics</span><span>Epoxy</span></div>
             </div>
           </div>
@@ -624,7 +664,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">11</span>
             <div class="pub-body">
-              <p class="pub-citation">P. Nguyen, D. Callan, E. Plunkett, M. Gruschka, <strong>N. Alizadeh</strong>, M. Landsman, G. Su, E. Gann, C. Bates, D. DeLongchamp, M. Chabinyc, "Resonant soft X-ray scattering reveals the distribution of dopants in semicrystalline conjugated polymers," <em>The Journal of Physical Chemistry B</em> 2024, 128 (50), 12597–12611.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1021/acs.jpcb.4c05774" target="_blank" rel="noopener noreferrer" class="pub-link">P. Nguyen, D. Callan, E. Plunkett, M. Gruschka, <strong>N. Alizadeh</strong>, M. Landsman, G. Su, E. Gann, C. Bates, D. DeLongchamp, M. Chabinyc, "Resonant soft X-ray scattering reveals the distribution of dopants in semicrystalline conjugated polymers," <em>The Journal of Physical Chemistry B</em> 2024, 128 (50), 12597–12611.</a></p>
               <div class="pub-tags"><span>X-ray Scattering</span><span>Conjugated Polymers</span></div>
             </div>
           </div>
@@ -632,7 +672,7 @@
           <div class="pub-card fade-in">
             <span class="pub-num">12</span>
             <div class="pub-body">
-              <p class="pub-citation">J. Blankenship, A. Levi, D. Goldfeld, J. Self, <strong>N. Alizadeh</strong>, D. Chen, G. Fredrickson, C. Bates, "Asymmetric miktoarm star polymers as polyester thermoplastic elastomers," <em>Macromolecules</em> 2022, 55 (12), 4929–4936.</p>
+              <p class="pub-citation"><a href="https://doi.org/10.1021/acs.macromol.2c00214" target="_blank" rel="noopener noreferrer" class="pub-link">J. Blankenship, A. Levi, D. Goldfeld, J. Self, <strong>N. Alizadeh</strong>, D. Chen, G. Fredrickson, C. Bates, "Asymmetric miktoarm star polymers as polyester thermoplastic elastomers," <em>Macromolecules</em> 2022, 55 (12), 4929–4936.</a></p>
               <div class="pub-tags"><span>Star Polymers</span><span>Thermoplastic Elastomers</span><span>Macromolecules</span></div>
             </div>
           </div>
@@ -779,7 +819,7 @@
       </div>
 
       <!-- Awards -->
-      <div class="awards-section fade-in">
+      <div class="awards-section fade-in" id="awards">
         <h3 class="awards-title">Honors &amp; Awards</h3>
         <div class="awards-grid">
           <div class="award-item">

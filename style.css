@@ -19,8 +19,8 @@
   --gold-dim:      rgba(200, 134, 10, 0.10);
 
   --text-primary:  #1d1d1f;
-  --text-secondary:#6e6e73;
-  --text-muted:    #a1a1a6;
+  --text-secondary:#4e4e53;
+  --text-muted:    #86868b;
 
   --nav-height: 70px;
   --radius: 12px;
@@ -583,7 +583,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 .highlight-icon svg { width: 20px; height: 20px; }
 
 .highlight-card h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
-.highlight-card p { font-size: 0.82rem; color: var(--text-muted); margin: 0; }
+.highlight-card p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
 
 .about-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -856,7 +856,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 .skill-group p {
   color: var(--text-secondary);
   line-height: 1.8;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* Certifications Accordion */

@@ -2025,13 +2025,10 @@ strong { color: var(--text-primary); font-weight: 600; }
   margin: -24px -24px 20px -24px;
   border-radius: var(--radius) var(--radius) 0 0;
   overflow: hidden;
-  height: 200px;
 }
 .timeline-card-img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   display: block;
 }
 

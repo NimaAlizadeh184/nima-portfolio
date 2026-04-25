@@ -12,9 +12,9 @@
   --border:        #d2d2d7;
   --border-light:  #e8e8ed;
 
-  --teal:          #0f2d5e;
-  --teal-dim:      #0a2040;
-  --teal-glow:     rgba(15, 45, 94, 0.08);
+  --teal:          #1a4f8a;
+  --teal-dim:      #163d6e;
+  --teal-glow:     rgba(26, 79, 138, 0.10);
   --gold:          #d97706;
   --gold-dim:      rgba(217, 119, 6, 0.10);
 
@@ -1822,7 +1822,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   margin-bottom: 24px;
 }
 .hero-name span {
-  background: linear-gradient(120deg, #1d1d1f 0%, #1d1d1f 40%, #0f2d5e 75%, #0a2040 100%);
+  background: linear-gradient(120deg, #1d1d1f 0%, #3a3a3c 30%, #1a4f8a 70%, #163d6e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1987,7 +1987,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 /* --- HERO BACKGROUND: white with very soft teal glow --- */
 .hero {
   background:
-    radial-gradient(ellipse at 20% 60%, rgba(15,45,94,0.06) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 60%, rgba(26,79,138,0.07) 0%, transparent 55%),
     radial-gradient(ellipse at 80% 20%, rgba(0,50,100,0.04) 0%, transparent 50%),
     #ffffff;
 }
@@ -2000,7 +2000,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 /* --- SCROLL PROGRESS BAR COLOR --- */
 #scroll-progress {
-  background: linear-gradient(90deg, #0f2d5e, #1d1d1f);
+  background: linear-gradient(90deg, #1a4f8a, #1d1d1f);
   height: 2.5px;
 }
 

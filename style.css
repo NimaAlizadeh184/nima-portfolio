@@ -12,11 +12,11 @@
   --border:        #d2d2d7;
   --border-light:  #e8e8ed;
 
-  --teal:          #2d6a4f;
-  --teal-dim:      #1b4332;
-  --teal-glow:     rgba(45, 106, 79, 0.10);
-  --gold:          #b45309;
-  --gold-dim:      rgba(180, 83, 9, 0.10);
+  --teal:          #475569;
+  --teal-dim:      #334155;
+  --teal-glow:     rgba(71, 85, 105, 0.10);
+  --gold:          #c2692a;
+  --gold-dim:      rgba(194, 105, 42, 0.10);
 
   --text-primary:  #1d1d1f;
   --text-secondary:#4e4e53;
@@ -1822,7 +1822,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   margin-bottom: 24px;
 }
 .hero-name span {
-  background: linear-gradient(120deg, #1d1d1f 0%, #3a3a3c 30%, #2d6a4f 70%, #1b4332 100%);
+  background: linear-gradient(120deg, #1d1d1f 0%, #3a3a3c 30%, #475569 70%, #334155 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1987,7 +1987,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 /* --- HERO BACKGROUND: white with very soft teal glow --- */
 .hero {
   background:
-    radial-gradient(ellipse at 20% 60%, rgba(45,106,79,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 60%, rgba(71,85,105,0.07) 0%, transparent 55%),
     radial-gradient(ellipse at 80% 20%, rgba(0,50,100,0.04) 0%, transparent 50%),
     #ffffff;
 }
@@ -2000,7 +2000,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 /* --- SCROLL PROGRESS BAR COLOR --- */
 #scroll-progress {
-  background: linear-gradient(90deg, #2d6a4f, #1d1d1f);
+  background: linear-gradient(90deg, #475569, #1d1d1f);
   height: 2.5px;
 }
 

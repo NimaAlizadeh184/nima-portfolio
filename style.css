@@ -177,9 +177,11 @@ strong { color: var(--text-primary); font-weight: 600; }
   z-index: 0;
 }
 .hero-pt-bg img {
-  width: 105%;
+  width: 100%;
+  height: 100%;
   max-width: none;
-  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Dot grid overlay */

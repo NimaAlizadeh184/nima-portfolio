@@ -674,7 +674,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 .timeline-dot {
   position: absolute;
-  left: -30px;
+  left: -32px;
   top: 20px;
   width: 14px;
   height: 14px;
@@ -699,7 +699,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 .timeline-dot-sm {
   width: 10px;
   height: 10px;
-  left: -28px;
+  left: -30px;
   top: 18px;
   background: var(--border-light);
   box-shadow: 0 0 0 2px var(--border);
@@ -1353,6 +1353,8 @@ strong { color: var(--text-primary); font-weight: 600; }
   .about-visuals { grid-template-columns: 1fr; }
   .about-diagram { display: none; }
   .timeline { padding-left: 28px; }
+  .timeline-dot { left: -24px; }
+  .timeline-dot-sm { left: -22px; }
 
   .skill-row { grid-template-columns: 1fr; }
   .skill-row-flip .skill-row-img { order: 0; }

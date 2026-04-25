@@ -12,9 +12,9 @@
   --border:        #d2d2d7;
   --border-light:  #e8e8ed;
 
-  --teal:          #1a4f8a;
-  --teal-dim:      #163d6e;
-  --teal-glow:     rgba(26, 79, 138, 0.10);
+  --teal:          #d97706;
+  --teal-dim:      #b45309;
+  --teal-glow:     rgba(217, 119, 6, 0.10);
   --gold:          #d97706;
   --gold-dim:      rgba(217, 119, 6, 0.10);
 
@@ -1827,7 +1827,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   margin-bottom: 24px;
 }
 .hero-name span {
-  background: linear-gradient(120deg, #1d1d1f 0%, #3a3a3c 30%, #1a4f8a 70%, #163d6e 100%);
+  background: linear-gradient(120deg, #1d1d1f 0%, #3a3a3c 30%, #d97706 70%, #b45309 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1940,7 +1940,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   background: var(--teal-dim);
   border-color: var(--teal-dim);
   color: #fff;
-  box-shadow: 0 8px 28px rgba(0,166,147,0.28);
+  box-shadow: 0 8px 28px rgba(217,119,6,0.28);
   transform: translateY(-2px) scale(1.02);
 }
 .btn-outline {
@@ -1969,7 +1969,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   color: #fff;
   border: none;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,166,147,0.28);
+  box-shadow: 0 6px 20px rgba(217,119,6,0.28);
 }
 
 /* --- CONTACT FORM: light inputs --- */
@@ -1986,14 +1986,14 @@ strong { color: var(--text-primary); font-weight: 600; }
   outline: none;
   background: #fff;
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(0,166,147,0.15);
+  box-shadow: 0 0 0 3px rgba(217,119,6,0.15);
 }
 
 /* --- HERO BACKGROUND: white with very soft teal glow --- */
 .hero {
   background:
-    radial-gradient(ellipse at 20% 60%, rgba(26,79,138,0.07) 0%, transparent 55%),
-    radial-gradient(ellipse at 80% 20%, rgba(0,50,100,0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 60%, rgba(217,119,6,0.06) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 20%, rgba(180,83,9,0.04) 0%, transparent 50%),
     #ffffff;
 }
 
@@ -2005,7 +2005,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 /* --- SCROLL PROGRESS BAR COLOR --- */
 #scroll-progress {
-  background: linear-gradient(90deg, #1a4f8a, #1d1d1f);
+  background: linear-gradient(90deg, #d97706, #1d1d1f);
   height: 2.5px;
 }
 

@@ -826,6 +826,14 @@ strong { color: var(--text-primary); font-weight: 600; }
   min-height: 380px;
 }
 
+.skill-row-solo {
+  grid-template-columns: 1fr;
+  min-height: auto;
+}
+.skill-row-solo .skill-row-content {
+  padding: 40px 52px;
+}
+
 .skill-row-flip .skill-row-img { order: 2; }
 .skill-row-flip .skill-row-content { order: 1; }
 

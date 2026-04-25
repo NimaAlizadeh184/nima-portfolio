@@ -1177,6 +1177,11 @@ strong { color: var(--text-primary); font-weight: 600; }
   background: var(--bg-card);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
+
+.contact-section-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
 .contact-quote p {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;

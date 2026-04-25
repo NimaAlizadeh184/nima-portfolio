@@ -733,8 +733,8 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .timeline-date {
-  font-size: 0.78rem;
-  color: var(--text-muted);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
   font-weight: 500;
   letter-spacing: 0.03em;
 }
@@ -792,11 +792,11 @@ strong { color: var(--text-primary); font-weight: 600; }
   margin-top: 10px;
 }
 .timeline-bullets li {
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
   padding-left: 18px;
   position: relative;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 .timeline-bullets li::before {
   content: '▸';
@@ -811,9 +811,13 @@ strong { color: var(--text-primary); font-weight: 600; }
 /* ---- Skills alternating rows ---- */
 .skill-rows {
   margin-bottom: 40px;
-  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.skill-row + .skill-row {
+  border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 .skill-row {
@@ -1779,8 +1783,8 @@ strong { color: var(--text-primary); font-weight: 600; }
   letter-spacing: -0.02em;
 }
 
-/* --- PERIODIC TABLE: ultra-subtle --- */
-.hero-pt-bg { opacity: 0.05; }
+/* --- PERIODIC TABLE: visible but soft --- */
+.hero-pt-bg { opacity: 0.13; }
 
 /* --- HERO PHOTO: no ring spin, cleaner --- */
 .hero-photo-ring {
@@ -1849,9 +1853,9 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 /* --- SECTION HEADERS: Apple-scale --- */
 .section-header h2 {
-  font-size: clamp(3.2rem, 8vw, 6.5rem);
-  letter-spacing: -0.04em;
-  line-height: 1.02;
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
   color: var(--text-primary);
 }
 .section-header p {
@@ -1993,7 +1997,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 /* --- MOBILE DEEP OVERHAUL --- */
 @media (max-width: 768px) {
   .hero-name { font-size: clamp(3.4rem, 16vw, 5.5rem); }
-  .section-header h2 { font-size: clamp(2.8rem, 11vw, 4.5rem); }
+  .section-header h2 { font-size: clamp(2.2rem, 9vw, 3.2rem); }
   .hero-photo-ring { width: 120px; height: 120px; }
   .hero-photo { width: 110px; height: 110px; }
   .btn { padding: 10px 22px; font-size: 0.85rem; }

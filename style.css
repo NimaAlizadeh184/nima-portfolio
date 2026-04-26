@@ -2037,16 +2037,19 @@ strong { color: var(--text-primary); font-weight: 600; }
   letter-spacing: 0.2em !important;
 }
 
-/* --- EDUCATION CARD IMAGES --- */
+/* --- TIMELINE CARD IMAGES (Education + Experience) --- */
 .timeline-card-img {
   width: calc(100% + 48px);
   margin: -24px -24px 20px -24px;
   border-radius: var(--radius) var(--radius) 0 0;
   overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-secondary);
 }
 .timeline-card-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 

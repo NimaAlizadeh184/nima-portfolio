@@ -415,10 +415,6 @@ strong { color: var(--text-primary); font-weight: 600; }
 
 .stat-item {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
 }
 
 .stat-num {
@@ -437,6 +433,8 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .stat-label {
+  display: block;
+  margin-top: 8px;
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-muted);

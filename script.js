@@ -263,11 +263,12 @@ document.querySelectorAll('.thesis-toggle').forEach(btn => {
   if (!el) return;
 
   const phrases = [
-    'Interpenetrating Polymer Networks',
-    'DLP 3D Printing & Additive Manufacturing',
-    'Block Copolymers & Semiconductor Patterning',
-    'High-Temperature Aerospace Materials',
-    'AI-Assisted Materials Science'
+    'AI-Driven Materials Discovery',
+    'Lab Automation and Robotics',
+    'High-Throughput Powder Synthesis',
+    'DLP 3D Printing and Additive Manufacturing',
+    'Block Copolymers and Semiconductor Patterning',
+    'Interpenetrating Polymer Networks'
   ];
 
   let pIdx = 0, cIdx = 0, deleting = false;

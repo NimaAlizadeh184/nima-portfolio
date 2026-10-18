@@ -56,6 +56,15 @@
     });
   }
 
+  /* About chart: draw when it scrolls into view */
+  var ss = document.querySelector('.ss-figure');
+  if (ss && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) { ss.classList.add('drawn'); io.disconnect(); }
+    }, { threshold: 0.4 });
+    io.observe(ss);
+  } else if (ss) { ss.classList.add('drawn'); }
+
   /* Publication tabs */
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.pub-tab'));
   tabs.forEach(function (tab) {

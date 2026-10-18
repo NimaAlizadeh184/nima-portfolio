@@ -208,22 +208,32 @@ a:hover { color: var(--cobalt-deep); }
 .focus dt { font-weight: 600; color: var(--ink); }
 .focus dd { margin-top: 4px; font-size: 0.9rem; color: var(--muted); line-height: 1.5; }
 
-.ipn-figure { position: sticky; top: calc(var(--nav-h) + 32px); }
-.ipn-svg { width: 100%; height: auto; display: block; }
-.ipn-bg { fill: var(--tint); }
-.ipn-net-a path { fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
-.ipn-net-b path { fill: none; stroke: var(--cobalt); stroke-width: 2.4; stroke-linecap: round; }
-.ipn-x-a { fill: var(--ink); }
-.ipn-x-b { fill: var(--paper); stroke: var(--cobalt); stroke-width: 2.4; }
-.ipn-graft { fill: var(--amber); stroke: var(--paper); stroke-width: 1.5; }
-.ipn-net-b { transition: transform 0.9s var(--ease); transform-origin: center; }
-.ipn-figure:hover .ipn-net-b { transform: translate(3px, -3px); }
-.ipn-figure figcaption { margin-top: 16px; font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
-.key { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin: 0 6px 0 14px; vertical-align: -1px; }
-.key-a { background: var(--ink); margin-left: 0; }
-.key-b { background: var(--paper); box-shadow: inset 0 0 0 2px var(--cobalt); }
-.key-g { background: var(--amber); }
-.ipn-note { display: block; margin-top: 10px; }
+.ss-figure { position: sticky; top: calc(var(--nav-h) + 32px); background: var(--tint); border-radius: 18px; padding: 24px 24px 20px; }
+.ss-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.ss-axis line { stroke: var(--ink); stroke-width: 1.2; }
+.ss-label { font: 500 12px var(--sans); fill: var(--muted); }
+.ss-fill-ipn { fill: var(--cobalt-wash); opacity: 0; transition: opacity 1s ease 1.3s; }
+.ss-fill-pmma { fill: #dde2ea; opacity: 0; transition: opacity 1s ease 0.6s; }
+.ss-pmma, .ss-ipn { fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.ss-pmma { stroke: var(--muted); stroke-width: 2; transition: stroke-dashoffset 0.8s ease 0.2s; }
+.ss-ipn { stroke: var(--cobalt); stroke-width: 2.6; transition: stroke-dashoffset 1.6s cubic-bezier(0.45, 0, 0.2, 1) 0.6s; }
+.ss-brk-pmma, .ss-brk-ipn { fill: none; stroke-width: 2; opacity: 0; transition: opacity 0.3s ease; }
+.ss-brk-pmma { stroke: var(--muted); transition-delay: 1s; }
+.ss-brk-ipn { stroke: var(--cobalt); transition-delay: 2.2s; }
+.ss-tag { font: 600 13px var(--sans); opacity: 0; transition: opacity 0.4s ease 2.2s; }
+.ss-tag-pmma { fill: var(--muted); }
+.ss-tag-ipn { fill: var(--cobalt); }
+.ss-big { font: 500 34px var(--serif); fill: var(--cobalt-deep); opacity: 0; transition: opacity 0.6s ease 2.3s; }
+.ss-small { font: 500 12px var(--sans); fill: var(--cobalt-deep); opacity: 0; transition: opacity 0.6s ease 2.4s; }
+.ss-figure.drawn .ss-pmma, .ss-figure.drawn .ss-ipn { stroke-dashoffset: 0; }
+.ss-figure.drawn .ss-fill-ipn, .ss-figure.drawn .ss-fill-pmma,
+.ss-figure.drawn .ss-brk-pmma, .ss-figure.drawn .ss-brk-ipn,
+.ss-figure.drawn .ss-tag, .ss-figure.drawn .ss-big, .ss-figure.drawn .ss-small { opacity: 1; }
+.ss-figure figcaption { margin-top: 14px; font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
+.key { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin: 0 6px 0 16px; vertical-align: 3px; }
+.key-ipn { background: var(--cobalt); margin-left: 0; }
+.key-pmma { background: var(--muted); }
+.ss-note { display: block; margin-top: 8px; }
 
 /* ---------- Entries (experience and education) ---------- */
 .entry {
@@ -425,7 +435,7 @@ a:hover { color: var(--cobalt-deep); }
   .hero-facts div:first-child { grid-column: 1 / -1; }
 
   .about-grid { grid-template-columns: 1fr; }
-  .ipn-figure { position: static; max-width: 420px; }
+  .ss-figure { position: static; max-width: 460px; }
   .focus { grid-template-columns: 1fr; gap: 18px; }
 
   .entry { grid-template-columns: 1fr; gap: 6px; }
@@ -456,7 +466,9 @@ a:hover { color: var(--cobalt-deep); }
   .xrd-line { stroke-dashoffset: 0; transition: none; }
   .xrd-fill { opacity: 0.8; transition: none; }
   .peak { opacity: 1; transition: none; }
-  .ipn-net-b, .abstract summary::after, .certs summary::after { transition: none; }
+  .abstract summary::after, .certs summary::after { transition: none; }
+  .ss-pmma, .ss-ipn { stroke-dashoffset: 0; transition: none; }
+  .ss-fill-ipn, .ss-fill-pmma, .ss-brk-pmma, .ss-brk-ipn, .ss-tag, .ss-big, .ss-small { opacity: 1; transition: none; }
 }
 
 /* ---------- Final adjustments ---------- */

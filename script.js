@@ -56,14 +56,25 @@
     });
   }
 
-  /* About chart: draw when it scrolls into view */
-  var ss = document.querySelector('.ss-figure');
-  if (ss && 'IntersectionObserver' in window) {
+  /* About loop: draw once when it scrolls into view, then send one sample around */
+  var loop = document.querySelector('.loop-figure');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function runLoop() {
+    loop.classList.add('drawn');
+    var run = document.getElementById('loopRun');
+    if (reduce || !run || !run.beginElement) return;
+    setTimeout(function () {
+      loop.classList.add('running');
+      run.beginElement();
+      setTimeout(function () { loop.classList.remove('running'); }, 5200);
+    }, 2100);
+  }
+  if (loop && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting) { ss.classList.add('drawn'); io.disconnect(); }
+      if (entries[0].isIntersecting) { runLoop(); io.disconnect(); }
     }, { threshold: 0.4 });
-    io.observe(ss);
-  } else if (ss) { ss.classList.add('drawn'); }
+    io.observe(loop);
+  } else if (loop) { loop.classList.add('drawn'); }
 
   /* Publication tabs */
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.pub-tab'));
